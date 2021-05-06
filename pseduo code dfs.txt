@@ -1,0 +1,15 @@
+stack = new Stack();
+s.push(initial node);
+
+while ( s != empty) {
+    x = s.pop();
+    if(x is not visited) {
+        visited[x] = true;
+
+        for(each edge(x,y)) {
+            if( y is not visited) {
+                s.push(y);
+            }
+        }
+    }
+}
